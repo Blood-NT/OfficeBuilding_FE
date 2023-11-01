@@ -7,7 +7,7 @@ export const login = (data) => async dispatch => {
     try {
         const res = await axios({
             method: 'POST',
-            baseURL: process.env.REACT_APP_URL_LOGIN,
+            baseURL: http://34.31.97.89:8080,
             url: "login",
             data: data
         });
