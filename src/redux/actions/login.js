@@ -7,7 +7,7 @@ export const login = (data) => async dispatch => {
     try {
         const res = await axios({
             method: 'POST',
-            baseURL: "https://nolantttn.onrender.com/user",
+            baseURL: process.env.REACT_APP_URL_LOGIN,
             url: "login",
             data: data
         });
